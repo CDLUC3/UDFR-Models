@@ -1,5 +1,5 @@
-UDFR - Models
+ï»¿UDFR - Models
 
-1.	Udfrs – Main UDFR Schema File. (onto.owl)
-2.	Udfr – Registry file where instances are asserted. (udfr.owl)
-3.	Profile – Schema File where user profile information is stored. (profile.owl)
+1.	Udfrs â€“ Main UDFR Schema File. (onto.owl)
+2.	Udfr â€“ Registry file where instances are asserted. (udfr.owl)
+3.	Profile â€“ Schema File where user profile information is stored. (profile.owl)
