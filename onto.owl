@@ -26,43 +26,41 @@
     xmlns:udfrs="http://udfr.org/onto#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:image="http://purl.org/NET/mediatypes/image/"
-  xml:base="http://udfr.org/onto">
+  xml:base="http://udfr.org/onto#">
   <owl:Ontology rdf:about="">
-    <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >UDFR  - Schema</rdfs:label>
     <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
     <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
     <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >UDFR ontology, version 1.0, 2012-02-01</owl:versionInfo>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >UDFR Schema</rdfs:label>
+    <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
     <owl:imports rdf:resource="http://ns.ontowiki.net/SysOnt/"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >UDFR schema ontology, version 1.0, 2012-02-01</owl:versionInfo>
   </owl:Ontology>
-  <owl:Ontology rdf:about="http://id.loc.gov/vocabulary/iso639-2/"/>
-  <owl:Ontology rdf:about="http://purl.org/NET/mediatype/"/>
   <owl:Class rdf:ID="ProgrammingLanguageType">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Programming language type</rdfs:label>
+    >Programming Language Type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:ID="ControlledVocabulary"/>
     </rdfs:subClassOf>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="DisclosureType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DisclosureType</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Product disclosure type.</dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Disclosure type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="DigestType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Digest Type</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Message digest or algorithm type.</dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Digest type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
@@ -92,30 +90,30 @@
   </owl:Class>
   <owl:Class rdf:ID="IndividualAgentRoleType">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Individual agent role</rdfs:label>
+    >Individual Agent Role Type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="GenreFacetType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Genre Facet Type</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The genre facet type defines the main classes found in the GDFR classification system. It is intended to indicate broadly the type of content associated with a format. </dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Genre facet type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="CompressionLossinessType">
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Compression lossiness type.</dct:description>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Compression Lossiness Type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Compression lossiness type</rdfs:label>
+    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Compression lossiness type.</dct:description>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="File">
@@ -162,10 +160,10 @@
     >File</rdfs:label>
   </owl:Class>
   <owl:Class rdf:ID="ExternalSignature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >External Signature</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >External format signature.</dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >External signature</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#AbstractSignature"/>
     </rdfs:subClassOf>
@@ -175,20 +173,20 @@
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="DocumentIntentType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Document Intent Type</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Document intent type.</dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Document intent type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="BasisFacetType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Basis FacetType</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Basis facet type, indicating the repersentational nature of a classified format.</dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Basis facet type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
@@ -413,11 +411,11 @@
     <owl:disjointWith>
       <owl:Class rdf:about="#Digest"/>
     </owl:disjointWith>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Byte Sequence</rdfs:label>
     <owl:disjointWith>
       <owl:Class rdf:about="#Assessment"/>
     </owl:disjointWith>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Byte sequence</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="#"/>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Byte sequence that is a component of an internal format signature.</dct:description>
@@ -443,10 +441,10 @@
     <owl:disjointWith rdf:resource="#File"/>
   </owl:Class>
   <owl:Class rdf:about="#InternalSignature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Internal Signature</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Internal format signature.</dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Internal signature</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#AbstractSignature"/>
     </rdfs:subClassOf>
@@ -454,10 +452,10 @@
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="DomainFacetType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Domain Facet Type</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Domain facet type, indicating an intellectual domain in which a classified format is commonly used.</dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Domain facet type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
@@ -465,7 +463,7 @@
   </owl:Class>
   <owl:Class rdf:ID="SoftwareType">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Software type</rdfs:label>
+    >Software Type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
@@ -509,26 +507,26 @@
     <owl:disjointWith rdf:resource="#File"/>
   </owl:Class>
   <owl:Class rdf:ID="JurisdictionCodeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Legal Jurisdiction Code Type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Legal Jurisdiction types</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="MediaAccessType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Media Access Type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Media access type</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="RoleFacetType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Role Facet Type</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The RoleFacetType indicates the ontological role of the classified content.</dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Role facet type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
@@ -551,13 +549,13 @@
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="ByteOrderType">
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Format byte order type.</dct:description>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Byte Order Type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Byte order type</rdfs:label>
+    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Format byte order type.</dct:description>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:about="#AbstractProduct">
@@ -596,18 +594,18 @@
     <owl:disjointWith rdf:resource="#ByteSequence"/>
   </owl:Class>
   <owl:Class rdf:ID="GrammarType">
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Format grammar type.</dct:description>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Grammar Type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Grammar type</rdfs:label>
+    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Format grammar type.</dct:description>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="FormatRoleType">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Format role</rdfs:label>
+    >Format Role Type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
@@ -635,7 +633,7 @@
   </owl:Class>
   <owl:Class rdf:ID="AssessmentType">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Assessment type</rdfs:label>
+    >Assessment Type</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Format assessment formal notation type.</dct:description>
     <rdfs:subClassOf>
@@ -660,69 +658,69 @@
     >Media product.</dct:description>
   </owl:Class>
   <owl:Class rdf:ID="HardwareType">
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Hardware type.</dct:description>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hardware Type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Hardware type</rdfs:label>
+    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hardware type.</dct:description>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="TransformFacetType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Transform Facet Type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Transform facet type</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The TransformFacetType indicates for a Format that defines a transformation on the form of content.</dct:description>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="SignatureType">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Signature type</rdfs:label>
+    >Signature Type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="ConstraintFacetType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Constraint Facet Type</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Constraint facet type, indicating the organizational nature of a classified format. </dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Constraint facet</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="AvailabilityType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >AvailabilityType</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Product availability type.</dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Availability type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="MediaWriteType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Media Write Type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Media write type</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="IPRType">
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Intellectual property right (IPR) type.</dct:description>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >IPR Type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >IPR type</rdfs:label>
+    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intellectual property right (IPR) type.</dct:description>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:about="#Holding">
@@ -759,10 +757,10 @@
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:ID="FormFacetType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Form FacetType</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Form facet type, indicating the nature of a format encoding.</dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Form facet type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
@@ -808,10 +806,10 @@
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="CompositionFacetType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Composition Facet Type</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Composition facet type, indicating the compositional nature of a classified format.</dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Composition facet type</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#ControlledVocabulary"/>
     </rdfs:subClassOf>
@@ -824,6 +822,8 @@
     <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <owl:disjointWith rdf:resource="#AbstractBase"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Controlled Vocabulary</rdfs:label>
     <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
     <rdfs:isDefinedBy rdf:resource="#"/>
     <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
@@ -877,9 +877,9 @@
     <owl:disjointWith rdf:resource="#IPR"/>
   </owl:Class>
   <owl:Class rdf:ID="SignatureObligationType">
-    <rdfs:subClassOf rdf:resource="#ControlledVocabulary"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Signature obligation type</rdfs:label>
+    >Signature ObligationType</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#ControlledVocabulary"/>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:about="#Identifier">
@@ -909,13 +909,13 @@
   </owl:Class>
   <owl:Class rdf:ID="MediaType">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Media type</rdfs:label>
+    >Media Type</rdfs:label>
     <rdfs:subClassOf rdf:resource="#ControlledVocabulary"/>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="ProcessType">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Process type</rdfs:label>
+    >Process Type</rdfs:label>
     <rdfs:subClassOf rdf:resource="#ControlledVocabulary"/>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
@@ -945,10 +945,10 @@
     <owl:disjointWith rdf:resource="#AbstractProduct"/>
   </owl:Class>
   <owl:Class rdf:ID="FileType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >File Type</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >File type.</dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >File type</rdfs:label>
     <rdfs:subClassOf rdf:resource="#ControlledVocabulary"/>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
@@ -983,11 +983,11 @@
     <owl:disjointWith rdf:resource="#Assessment"/>
   </owl:Class>
   <owl:Class rdf:about="#FileFormat">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >File Format</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#AbstractFormat"/>
     </rdfs:subClassOf>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >File format</rdfs:label>
     <owl:disjointWith rdf:resource="#Compression"/>
     <owl:disjointWith rdf:resource="#Encoding"/>
     <rdfs:isDefinedBy rdf:resource="#"/>
@@ -1007,18 +1007,18 @@
     >Abstract format, which is set of syntactic and semantic rules governing the mapping from an abstract information model and a serialization.</dct:description>
   </owl:Class>
   <owl:Class rdf:ID="DocumentType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Document Type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#ControlledVocabulary"/>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Document type.</dct:description>
-    <rdfs:subClassOf rdf:resource="#ControlledVocabulary"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Document type</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="StatusType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administrative Status Type</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Administrative status type.</dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Administrative status type</rdfs:label>
     <rdfs:subClassOf rdf:resource="#ControlledVocabulary"/>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
@@ -1044,16 +1044,16 @@
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:ID="SignaturePositionType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Signature Position Type</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Internal signature position type.</dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Signature position type</rdfs:label>
     <rdfs:subClassOf rdf:resource="#ControlledVocabulary"/>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
   <owl:Class rdf:ID="FilePurposeType">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >File purpose type</rdfs:label>
+    >File Purpose Type</rdfs:label>
     <rdfs:subClassOf rdf:resource="#ControlledVocabulary"/>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:Class>
@@ -1072,7 +1072,7 @@
   </owl:Class>
   <owl:Class rdf:ID="AgentType">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Agent type</rdfs:label>
+    >Agent Type</rdfs:label>
     <rdfs:subClassOf rdf:resource="#ControlledVocabulary"/>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >An enumerated type of agent.</dct:description>
@@ -1083,10 +1083,10 @@
     <owl:disjointWith rdf:resource="#Digest"/>
     <owl:disjointWith rdf:resource="#AbstractProduct"/>
     <owl:disjointWith rdf:resource="#Agent"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Abstract signature</rdfs:label>
     <owl:disjointWith rdf:resource="#ByteSequence"/>
     <owl:disjointWith rdf:resource="#Grammar"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Abstract Signature</rdfs:label>
     <owl:disjointWith rdf:resource="#Assessment"/>
     <owl:disjointWith rdf:resource="#Identifier"/>
     <owl:disjointWith rdf:resource="#Process"/>
@@ -1099,7 +1099,7 @@
   </owl:Class>
   <owl:Class rdf:ID="LanguageCodeType">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Language code type</rdfs:label>
+    >Language Code Type</rdfs:label>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Authority control for enumerated language codes using ISO 639-2 alpha-3.</dct:description>
     <rdfs:subClassOf rdf:resource="#ControlledVocabulary"/>
@@ -1107,7 +1107,7 @@
   </owl:Class>
   <owl:Class rdf:ID="IdentifierNamespaceType">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Identifier namespace</rdfs:label>
+    >Identifier Namespace Type</rdfs:label>
     <rdfs:subClassOf rdf:resource="#ControlledVocabulary"/>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Identifier namespace.</dct:description>
@@ -1247,12 +1247,12 @@
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="countryCodeType">
-    <rdfs:range rdf:resource="#CountryCodeType"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Country Code Type</rdfs:label>
     <rdfs:domain rdf:resource="#Agent"/>
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Country code (ISO 3166-1 alpha-2).</dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Country code</rdfs:label>
+    <rdfs:range rdf:resource="#CountryCodeType"/>
     <rdfs:isDefinedBy rdf:resource="#"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="signaturePositionType">
@@ -1278,11 +1278,11 @@
   <owl:ObjectProperty rdf:ID="referenceFile">
     <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Product reference file.</dct:description>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Reference file</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="#"/>
     <rdfs:domain rdf:resource="#AbstractProduct"/>
     <rdfs:range rdf:resource="#File"/>
-    <rdfs:isDefinedBy rdf:resource="#"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >reference file</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="affiliation">
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
@@ -2419,34 +2419,6 @@
     <rdfs:isDefinedBy rdf:resource="#"/>
     <rdf:type rdf:resource="#ByteOrderType"/>
   </skos:Concept>
-  <owl:AllDifferent>
-    <owl:members rdf:parseType="Collection">
-      <skos:Concept rdf:ID="Sampled">
-        <skos:inScheme>
-          <skos:ConceptScheme rdf:ID="BasisFacetScheme">
-            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >Basis facet scheme</rdfs:label>
-            <rdfs:isDefinedBy rdf:resource="#"/>
-          </skos:ConceptScheme>
-        </skos:inScheme>
-        <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Sampled format basis type, indicating a format that primarily represents its content as sample values. For example. PNG.</dct:description>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Sampled</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="#"/>
-        <rdf:type rdf:resource="#BasisFacetType"/>
-      </skos:Concept>
-      <skos:Concept rdf:ID="Symbolic">
-        <skos:inScheme rdf:resource="#BasisFacetScheme"/>
-        <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Symbolic basis facet type, indicating a format that primarily represents its content as notational values. For example. PostScript.</dct:description>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Symbolic</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="#"/>
-        <rdf:type rdf:resource="#BasisFacetType"/>
-      </skos:Concept>
-    </owl:members>
-  </owl:AllDifferent>
   <skos:Concept rdf:ID="Shelfmark">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Shelfmark</rdfs:label>
@@ -2610,6 +2582,34 @@
     <rdfs:isDefinedBy rdf:resource="#"/>
     <rdf:type rdf:resource="#DocumentType"/>
   </skos:Concept>
+  <owl:AllDifferent>
+    <owl:members rdf:parseType="Collection">
+      <skos:Concept rdf:ID="Sampled">
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:ID="BasisFacetScheme">
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Basis facet scheme</rdfs:label>
+            <rdfs:isDefinedBy rdf:resource="#"/>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+        <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Sampled format basis type, indicating a format that primarily represents its content as sample values. For example. PNG.</dct:description>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Sampled</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="#"/>
+        <rdf:type rdf:resource="#BasisFacetType"/>
+      </skos:Concept>
+      <skos:Concept rdf:ID="Symbolic">
+        <skos:inScheme rdf:resource="#BasisFacetScheme"/>
+        <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Symbolic basis facet type, indicating a format that primarily represents its content as notational values. For example. PostScript.</dct:description>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Symbolic</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="#"/>
+        <rdf:type rdf:resource="#BasisFacetType"/>
+      </skos:Concept>
+    </owl:members>
+  </owl:AllDifferent>
   <udfrs:LanguageCodeType rdf:about="http://id.loc.gov/vocabulary/iso639-2/ron">
     <udfrs:aliasName xml:lang="fr">roumain</udfrs:aliasName>
     <rdfs:label xml:lang="fr">roumain | moldave</rdfs:label>

@@ -2,7 +2,6 @@
 <rdf:RDF
     xmlns:msg="http://purl.org/NET/mediatypes/message/"
     xmlns:text="http://purl.org/NET/mediatypes/text/"
-    xmlns:udfrs="http://udfr.org/onto#"
     xmlns:multipart="http://purl.org/NET/mediatypes/multipart/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:audio="http://purl.org/NET/mediatypes/audio/"
@@ -24,13 +23,14 @@
     xmlns:sysont="http://ns.ontowiki.net/SysOnt/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dcam="http://purl.org/dc/dcam/"
+    xmlns:udfrs="http://udfr.org/onto#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:image="http://purl.org/NET/mediatypes/image/"
   xml:base="http://udfr.org/udfr/">
   <owl:Ontology rdf:about="">
-    <owl:imports rdf:resource="http://udfr.org/onto#"/>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Created with TopBraid Composer</owl:versionInfo>
+    >UDFR instance ontology, version 1.0, 2012-02-01</owl:versionInfo>
+    <owl:imports rdf:resource="http://udfr.org/onto#"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >UDFR - Start Here</rdfs:label>
   </owl:Ontology>
